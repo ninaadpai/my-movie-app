@@ -5,7 +5,7 @@ import LoaderComponent from '../../common/loader.component';
 
 const styles = {
   movieColumn: {
-    marginBottom: 20
+    marginBottom: 0
   }
 }
 const MovieListComponent = ({movies, isLoading}) => {

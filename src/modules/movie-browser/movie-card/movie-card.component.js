@@ -5,12 +5,12 @@ import {openMovieModal} from '../movie-modal/movie-modal.actions';
 
 const styles = {
   cardMedia: {
-    maxHeight: 394,
+    maxHeight: 400,
     overflow: 'hidden'
   },
   card: {
     cursor: 'pointer',
-    marginTop: 20,
+    marginTop: 8,
     height: 400,
     overflow: 'hidden'
   },
