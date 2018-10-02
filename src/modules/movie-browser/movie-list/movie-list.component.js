@@ -2,7 +2,7 @@ import React from 'react';
 import {Row, Col} from 'react-bootstrap';
 import MovieCard from '../movie-card/movie-card.component';
 import LoaderComponent from '../../common/loader.component';
-
+import ErrorMessage from './movie-list.error.js';
 const styles = {
   movieColumn: {
     marginBottom: 0
@@ -13,7 +13,7 @@ const MovieListComponent = ({movies, isLoading}) => {
     <Col style={styles.movieColumn} key={movie.id} xs={12} sm={4} md={3} lg={3}>
       <MovieCard movie={movie} />
     </Col>
-  )) : null;
+  )) : <ErrorMessage />;
 
   return (
     <Row>
